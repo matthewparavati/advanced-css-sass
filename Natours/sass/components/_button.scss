@@ -9,6 +9,7 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+    backface-visibility: hidden;
   }
 
   &:hover {
@@ -55,6 +56,7 @@
     left: 0;
     z-index: -1;
     transition: all 0.4s;
+    backface-visibility: hidden;
   }
 
   &--animated {
