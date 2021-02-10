@@ -12,6 +12,7 @@
   }
 
   &__icon {
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(
       to right,
@@ -22,6 +23,5 @@
     display: inline-block;
     font-size: 6rem;
     margin-bottom: 0.5rem;
-    -webkit-background-clip: text;
   }
 }

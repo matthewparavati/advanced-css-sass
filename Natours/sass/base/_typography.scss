@@ -32,6 +32,7 @@ body {
 }
 
 .heading-secondary {
+  -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(
     to right,
@@ -46,7 +47,6 @@ body {
   word-spacing: 0.5rem;
   text-transform: uppercase;
   transition: all 0.2s;
-  -webkit-background-clip: text;
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
