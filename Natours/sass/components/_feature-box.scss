@@ -6,6 +6,7 @@
   padding: 2.5rem;
   text-align: center;
   transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
   @include respond(tab-port) {

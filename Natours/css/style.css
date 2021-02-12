@@ -69,6 +69,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 6rem;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
@@ -171,6 +172,7 @@ body {
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border: none;
   cursor: pointer; }
@@ -210,6 +212,7 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 .btn--animated {
@@ -241,6 +244,7 @@ body {
   perspective: 150rem;
   position: relative; }
   .card__side {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -320,7 +324,7 @@ body {
     color: #fff;
     margin-bottom: 8rem; }
   .card__price-only {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-transform: uppercase; }
   .card__price-value {
     font-size: 6rem;
@@ -409,6 +413,7 @@ body {
   padding: 2.5rem;
   text-align: center;
   transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
   @media (max-width: 56.25em) {
     .feature-box {
@@ -520,6 +525,11 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s; }
+  @supports (-webkit-backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
   .popup__content {
     position: absolute;
     top: 50%;

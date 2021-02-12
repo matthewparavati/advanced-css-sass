@@ -10,6 +10,7 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
     //changes for <button> element
@@ -63,6 +64,7 @@
     left: 0;
     z-index: -1;
     transition: all 0.4s;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 
