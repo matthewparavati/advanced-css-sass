@@ -8,6 +8,10 @@
   transition: all 0.3s;
   backface-visibility: hidden;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
@@ -24,5 +28,9 @@
     display: inline-block;
     font-size: 6rem;
     margin-bottom: 0.5rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 }
