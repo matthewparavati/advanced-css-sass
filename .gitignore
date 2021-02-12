@@ -5,8 +5,9 @@
 # ignore node/grunt dependency directories
 node_modules/
 
-# ignore demo folders / code
+# ignore demo folders / code, course info
 demo/
+course-info/
 
 # ignore log files and databases
 *.log
